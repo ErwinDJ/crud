@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../app/routes/dogs.tsx"],
+  "sourcesContent": ["import { type V2_MetaFunction } from \"@remix-run/node\";\nimport { Outlet } from \"@remix-run/react\";\n\nexport const meta: V2_MetaFunction = () => {\n  return [{ title: \"Dog List Page\" }];\n};\n\nexport default function DogsLayout() {\n  return (\n    <div className=\"m-12\">\n      <Outlet />\n    </div>\n  );\n}\n"],
+  "mappings": ";;;;;;;;;;AACA;AASM;AAPC,IAAM,OAAwB,MAAM;AACzC,SAAO,CAAC,EAAE,OAAO,gBAAgB,CAAC;AACpC;AAEe,SAAR,aAA8B;AACnC,SACE,mDAAC,SAAI,WAAU,QACb,6DAAC,YAAD;AAAA;AAAA;AAAA;AAAA,SAAQ,KADV;AAAA;AAAA;AAAA;AAAA,SAEA;AAEJ;",
+  "names": []
+}

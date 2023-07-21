@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../node_modules/routes-gen/src/route.ts"],
+  "sourcesContent": ["export function route<T extends string>(\n  path: T,\n  params?: Record<string, any>\n): T {\n  if (params) {\n    return Object.entries(params)\n      .reduce(\n        (result, [key, value]) =>\n          result.replace(new RegExp(`:${key}\\\\??`, \"g\"), value),\n        path as string\n      )\n      .replace(new RegExp(\"\\\\/:.+\\\\?\", \"g\"), \"\") as T;\n  }\n\n  return path;\n}\n"],
+  "mappings": ";;;;;;;;;AAAO,aAAS,MAAM,MAAM,QAAQ;AAClC,UAAI,QAAQ;AACV,eAAO,OAAO,QAAQ,MAAM,EAAE,OAAO,CAAC,QAAQ,CAAC,KAAK,KAAK,MAAM,OAAO,QAAQ,IAAI,OAAO,IAAI,WAAW,GAAG,GAAG,KAAK,GAAG,IAAI,EAAE,QAAQ,IAAI,OAAO,aAAa,GAAG,GAAG,EAAE;MACxK;AACE,aAAO;IACT;;;;",
+  "names": []
+}
