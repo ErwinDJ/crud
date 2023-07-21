@@ -1,2 +1,1 @@
-# remizzle
-# remizzle
+Sample CRUD using remix
